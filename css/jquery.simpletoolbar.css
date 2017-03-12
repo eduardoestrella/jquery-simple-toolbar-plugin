@@ -1,0 +1,45 @@
+/*
+====================================================================
+CSS Toolbar
+====================================================================
+*/
+
+#top-toolbar {
+    min-height: 55px;
+    margin: 0;
+    overflow: hidden;
+    background-color: #1B9AAA;
+}
+
+#top-toolbar ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    display: table;
+}
+
+#top-toolbar ul li {
+    display: table-cell;
+    list-style-type: none;
+    text-align: center;
+}
+
+#top-toolbar > ul > li > a {
+    color: #ffffff;
+    display: block;
+    line-height: 30px;
+    padding: 10px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#top-toolbar > ul > li.active a {
+    text-decoration: underline;
+    font-weight: bold;
+    border-top: 5px solid #06D6A0;
+}
+
+#top-toolbar > ul > li a:hover {
+    border-top: thick solid #06D6A0;
+}
