@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Simple toolbar Sample</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpletoolbar.css">
+    <style>
+        /*
+        ====================================================================
+        Correct block display
+        ====================================================================
+        */
+
+        header, section, footer, aside, nav, main, article, figure {
+            display: block;
+        }
+
+        /*
+        ====================================================================
+        CSS Generic
+        ====================================================================
+        */
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: verdana, sans-serif;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+        }
+
+        section {
+            margin: -58px 0 0 0;
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+        }
+
+        section:before {
+            content: "";
+            display: block;
+            height: 58px;
+            width: 100%;
+        }
+
+        /*
+       ====================================================================
+       CSS Wrapper
+       ====================================================================
+       */
+
+        .main-wrapper {
+            min-width: 400px;
+            height: 300px;
+            background-color: #F8FFE5;
+        }
+
+        .main-wrapper .wrapper {
+            height: 100%;
+        }
+
+        .main-wrapper .content {
+            height: 100%;
+        }
+
+        /*
+       ====================================================================
+       CSS Content
+       ====================================================================
+       */
+
+        #page-content {
+            height: 100%;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="main-wrapper">
+    <header>
+        <div class="wrapper">
+            <div class="content">
+                <div id="top-toolbar"></div>
+                <div id="progress-bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="wrapper">
+            <div class="content">
+                <div id="page-content">
+                    <p>Currently selected:</p>
+
+                    <p><span id="content">&gt; All &lt; </span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.simpletoolbar.js"></script>
+<script type="text/javascript">
+    /*
+     ====================================================================
+     Global
+     ====================================================================
+     */
+
+    $(document).ready(function () {
+        $('#top-toolbar').toolBar({
+            selectedCallback: function (item) {
+
+                var content = "";
+                $('#top-toolbar').find('.toolbar-item.active').each(function () {
+                    content += (content == "" ? "" : ", ");
+                    content += $(this).find('a').text();
+                });
+                $('#content').text("> " + content + " <");
+            }
+        });
+    });
+
+</script>
+</body>
+
+</html>
