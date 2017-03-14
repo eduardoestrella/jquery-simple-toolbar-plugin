@@ -37,12 +37,12 @@ $('#toolbar').toolBar();
 
 For customize the Toolbar you must configure the settings.
 
-* nimShowOption (Default: 3): minimum option that will be generate, if there isn't enough options it will be generated empty options. 
-* defaultOption (Default: ['Opt 1', 'Opt 2', 'Opt 3']): Array of default options to generate.
-* baseTemplate (Default: see below): The template of the wrapper of each item/option.
-* optionTemplate (Default: see below): The template of each item/option
-* hashSeparator (Default: '--'): Define the separator of URL Hash options. 
-* selectedCallback (Dafault: none): Callback when the user select an option
+* nimShowOption (*Default: 3*): minimum option that will be generate, if there isn't enough options it will be generated empty options. 
+* defaultOption (*Default: ['Opt 1', 'Opt 2', 'Opt 3']*): Array of default options to generate.
+* baseTemplate (*Default: see below*): The template of the wrapper of each item/option.
+* optionTemplate (*Default: see below*): The template of each item/option
+* hashSeparator (*Default: '--'*): Define the separator of URL Hash options. 
+* selectedCallback (*Dafault: none*): Callback when the user select an option
 
 Default Base Template:
 ````html
