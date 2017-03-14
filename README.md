@@ -8,7 +8,7 @@ Simple jQuery Toolbar Plugin to create dynamic and default multiple options
 
 [Try the demo page](https://eduardoestrella.github.io/jquery-simple-toolbar-plugin/)
 
-#Get Started
+# Get Started
 
 Import JS file
 
