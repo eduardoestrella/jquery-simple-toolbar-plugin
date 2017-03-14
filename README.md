@@ -41,6 +41,7 @@ For customize the Toolbar you must configure the settings.
 * defaultOption (Default: ['Opt 1', 'Opt 2', 'Opt 3']): Array of default options to generate.
 * baseTemplate (Default: see below): The template of the wrapper of each item/option.
 * optionTemplate (Default: see below): The template of each item/option
+* hashSeparator (Default: '--'): Define the separator of URL Hash options. 
 * selectedCallback (Dafault: none): Callback when the user select an option
 
 Default Base Template:
@@ -65,10 +66,10 @@ $('#toolbar').toolBar({
 
 ###How To - Customize default options with Hash URL 
 
-You can load your default options using URL Hash. Use '|' separator between options. example: `#item1|item2`
+You can load your default options using URL Hash. Use '|' separator between options. example: `#item1--item2`
 
 
-[Try URL Hash example](https://eduardoestrella.github.io/jquery-simple-toolbar-plugin/#item1@item2)
+[Try URL Hash example](https://eduardoestrella.github.io/jquery-simple-toolbar-plugin/#item1--item2)
 
 Note: The plugin will be generate 2 options (item1 and item2) and 1 more empty option because `minShowOption` by default is 3
 
