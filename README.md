@@ -67,7 +67,8 @@ $('#toolbar').toolBar({
 
 You can load your default options using URL Hash. Use '|' separator between options. example: `#item1|item2`
 
-[Try URL Hash example](https://eduardoestrella.github.io/jquery-simple-toolbar-plugin/#item1%7Citem2)
+
+[Try URL Hash example](https://eduardoestrella.github.io/jquery-simple-toolbar-plugin/#item1||item2)
 
 Note: The plugin will be generate 2 options (item1 and item2) and 1 more empty option because `minShowOption` by default is 3
 
