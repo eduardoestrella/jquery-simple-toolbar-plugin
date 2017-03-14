@@ -52,7 +52,7 @@ Default option(item) Template:
     <li class="toolbar-item"><a data-toggle="opt"></a></li>   
 ````
 
-Generate a new toolbar with some settings
+###How To - Generate a new toolbar with some settings
 
 ````javascript
 $('#toolbar').toolBar({
