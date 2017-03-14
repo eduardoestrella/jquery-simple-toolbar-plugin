@@ -26,14 +26,14 @@ Crate a Div to insert the generated toolbar
 ````html
 <div id="toolbar"></div>
 ````
-#Easy usage
+# Easy usage
 
 Generate a new toolbar 
 ```javascript
 $('#toolbar').toolBar();
 ```
 
-#Advance usage
+# Advance usage
 
 For customize the Toolbar you must configure the settings.
 
@@ -55,7 +55,7 @@ Default option(item) Template:
 <li class="toolbar-item"><a data-toggle="opt"></a></li>   
 ````
 
-###How To - Generate a new toolbar with some settings
+### How To - Generate a new toolbar with some settings
 
 ````javascript
 $('#toolbar').toolBar({
@@ -64,7 +64,7 @@ $('#toolbar').toolBar({
 });
 ````
 
-###How To - Customize default options with Hash URL 
+### How To - Customize default options with Hash URL 
 
 You can load your default options using URL Hash. Use '|' separator between options. example: `#item1--item2`
 
@@ -73,11 +73,11 @@ You can load your default options using URL Hash. Use '|' separator between opti
 
 Note: The plugin will be generate 2 options (item1 and item2) and 1 more empty option because `minShowOption` by default is 3
 
-#Dependencies
+# Dependencies
 
 * Jquery >= 1.7.0
 
-#Developed By 
+# Developed By 
 
 * Eduardo Estrella Rosario - <eduardo.estrella.rosario@gmail.com>
 
@@ -86,6 +86,6 @@ Note: The plugin will be generate 2 options (item1 and item2) and 1 more empty o
 </a>
 
 
-#License
+# License
 
 ![GPLv3](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/GPLv3_Logo.svg/200px-GPLv3_Logo.svg.png)
