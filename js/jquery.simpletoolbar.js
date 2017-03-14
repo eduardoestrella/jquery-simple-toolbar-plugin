@@ -27,6 +27,7 @@
             defaultOption: ['Opt 1', 'Opt 2', 'Opt 3'],
             baseTemplate: baseTemplate,
             optionTemplate: optionTemplate,
+            hashSeparator: '--',
             selectedCallback: undefined
         }, options);
 
@@ -46,7 +47,7 @@
             var options = settings.defaultOption;
             var hashUrl = window.location.hash;
             if (hashUrl) {
-                var hashOptions = hashUrl.substring(1).split("|");
+                var hashOptions = hashUrl.substring(1).split(settings.hashSeparator);
                 if (hashOptions.length >= 1) {
                     options = hashOptions;
                 }
