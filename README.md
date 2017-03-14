@@ -14,22 +14,26 @@ Simple jQuery Toolbar Plugin to create dynamic and default multiple options
 
 Import JS file
 
-    <script type="text/javascript" src="js/jquery.simpletoolbar.js"></script>
+````html
+<script type="text/javascript" src="js/jquery.simpletoolbar.js"></script>
+````
 
 Import CSS (optional)
-
-    <link rel="stylesheet" type="text/css" href="css/jquery.simpletoolbar.css">
+````html
+<link rel="stylesheet" type="text/css" href="css/jquery.simpletoolbar.css">
+````
 
 Crate a Div to insert the generated toolbar
 
-    <div id="toolbar"></div>
-
+````html
+<div id="toolbar"></div>
+````
 #Easy usage
 
 Generate a new toolbar 
-
-    $('#toolbar').toolBar();
-
+```javascript
+$('#toolbar').toolBar();
+```
 
 #Advance usage
 
@@ -43,13 +47,13 @@ For customize the Toolbar you must configure the settings.
 
 Default Base Template:
 ````html
-    <ul class="toolbar-menu">
-        <li class="toolbar-item active"><a data-toggle="all">All</a></li>
-    </ul>
+<ul class="toolbar-menu">
+    <li class="toolbar-item active"><a data-toggle="all">All</a></li>
+</ul>
 ````
 Default option(item) Template:
 ````html
-    <li class="toolbar-item"><a data-toggle="opt"></a></li>   
+<li class="toolbar-item"><a data-toggle="opt"></a></li>   
 ````
 
 ###How To - Generate a new toolbar with some settings
