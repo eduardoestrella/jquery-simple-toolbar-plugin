@@ -27,7 +27,6 @@
             defaultOption: ['Opt 1', 'Opt 2', 'Opt 3'],
             baseTemplate: baseTemplate,
             optionTemplate: optionTemplate,
-            progressBarId: 'progress-bar',
             selectedCallback: undefined
         }, options);
 
