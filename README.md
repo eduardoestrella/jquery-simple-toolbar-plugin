@@ -73,6 +73,19 @@ You can load your default options using URL Hash. Use '|' separator between opti
 
 Note: The plugin will be generate 2 options (item1 and item2) and 1 more empty option because `minShowOption` by default is 3
 
+### How To - Use Callback Setting
+
+````javascript
+$('#toolbar').toolBar({
+    nimShowOption: 3,
+    defaultOption: ['Opt 1', 'Opt 2', 'Opt 3'],
+    selectedCallback: function (item) {        
+        // item is the current Selected item
+        // Do staff...
+    }
+});
+````
+
 # Dependencies
 
 * Jquery >= 1.7.0
